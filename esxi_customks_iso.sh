@@ -11,7 +11,7 @@ command -v genisoimage >/dev/null 2>&1 || { echo >&2 "This script requires genis
 # Script must be started as root to allow iso mounting
 if [ "$EUID" -ne 0 ] ; then echo "Please run as root or sudo" ;  exit 1 ;  fi
 
-currentdir="${pwd}"
+currentdir="$(pwd)"
 
 while [[ "$#" -gt 0 ]]; do
   case $1 in
