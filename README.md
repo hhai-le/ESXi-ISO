@@ -14,7 +14,7 @@ upload VMware ESXi ISO to this folder.
 
 ![Alt text](image/image.png)
 
-> sudo ./esxi_customks_iso.sh --iso VMware-VMvisor-Installer-7.0U2-17630552.x86_64.iso \
+> sudo ./esxi_customks_iso.sh --iso VMware-VMvisor-Installer-7.0U3n-21930508.x86_64.iso \
 > --ks KS-TEMPLATE.CFG \
 > --ip-address 192.168.0.10 \
 > --netmask 255.255.255.0 \
