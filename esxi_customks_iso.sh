@@ -56,7 +56,7 @@ printf "Gateway: %s\n" "$KSGATEWAY"
 printf "Hostname: %s\n" "$KSHOSTNAME"
 printf "VLAN: %s\n" "$KSVLAN"
 
-
+echo $WORKINGDIR
 mkdir -p ${WORKINGDIR}/iso
 mount -t iso9660 -o loop,ro ${BASEISO} ${WORKINGDIR}/iso
 
