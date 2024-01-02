@@ -29,7 +29,7 @@ done
 
 if [[ -z $BASEISO || -z $KS || -z $KSIPADDRESS || -z $KSNETMASK || -z $KSGATEWAY || -z $KSHOSTNAME || -z $KSVLAN || -z $KSNAMESERVER ]]; then
  echo 'Usage: esxi_customks_iso.sh -i VMware-VMvisor-Installer-7.0U2-17630552.x86_64.iso -k KS-TEMPLATE.CFG \'
- echo '                            -a 192.168.0.10 -m 255.255.255.0 -g 192.168.0.1 -n esx1.virten.lab -v 0 -d 192.168.0.1'
+ echo '                            -a 192.168.0.10 -m 255.255.255.0 -g 192.168.0.1 -n esx1.alphanetworks.lab -v 0 -d 192.168.0.1'
  echo 'Options:'
  echo "  -i, --iso          Base ISO File"
  echo '  -k, --ks           Kickstart Configuration File'
