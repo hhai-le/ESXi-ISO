@@ -45,7 +45,7 @@ fi
 
 
 if [[ -z $WORKINGDIR ]]; then
-  WORKINGDIR="$(mktemp -t esxibuilder-XXXX)"
+  WORKINGDIR="$(mktemp -d -t esxibuilder-XXXX)"
 fi
 
 printf "=== Base ISO: %s ===\n" "$BASEISO"
