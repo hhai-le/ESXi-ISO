@@ -11,6 +11,8 @@ command -v genisoimage >/dev/null 2>&1 || { echo >&2 "This script requires genis
 # Script must be started as root to allow iso mounting
 if [ "$EUID" -ne 0 ] ; then echo "Please run as root or sudo" ;  exit 1 ;  fi
 
+currentdir = ${pwd}
+
 while [[ "$#" -gt 0 ]]; do
   case $1 in
     -i|--iso) BASEISO="$2"; shift ;;
@@ -80,7 +82,7 @@ cd ${WORKINGDIR}
 genisoimage -relaxed-filenames -J -R -o ${KSHOSTNAME}.iso -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -eltorito-boot efiboot.img -quiet -no-emul-boot ${WORKINGDIR}/isobuild  2>/dev/null
 echo "ISO saved at ${WORKINGDIR}/${KSHOSTNAME}.iso"
 
-mv ${WORKINGDIR}/${KSHOSTNAME}.iso ./
+mv ${WORKINGDIR}/${KSHOSTNAME}.iso ${currentdir}
 
 umount ${WORKINGDIR}/iso
 rm -rf ${WORKINGDIR}
