@@ -4,9 +4,9 @@ This script help you can custom ESXi ISO:
 
 Clone this repo & upload ESXi ISO which you want to custom:
 
-> git clone https://github.com/hhai-le/ESXi-ISO.git
-> cd ESXi-ISO
-> chmod +x esxi_customks_iso.sh
+> git clone https://github.com/hhai-le/ESXi-ISO.git \
+> cd ESXi-ISO \
+> chmod +x esxi_customks_iso.sh \
 
 ## example
 
