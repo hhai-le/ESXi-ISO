@@ -16,24 +16,27 @@ upload VMware ESXi ISO to this folder.
 
 run script:
 
-> sudo ./esxi_customks_iso.sh --iso \<iso> \
-> --ks KS-TEMPLATE.CFG \
-> --ip-address \<ip of esxi host> \
-> --netmask \<netmask> \
-> --gateway \<gateway> \
-> --hostname \<esxi hostname> \
-> --vlan \<vlan config for network management if trunking> \
-> --dns \<nameserver>
+```bash
+  sudo ./esxi_customks_iso.sh --iso <iso> \
+  --ks KS-TEMPLATE.CFG \
+  --ip-address <ip of esxi host> \
+  --netmask <netmask> \
+  --gateway <gateway> \
+  --hostname <esxi hostname> \
+  --vlan <vlan config for network management if trunking> \
+  --dns <nameserver>
+```
 
 ## example script
 
-> sudo ./esxi_customks_iso.sh --iso VMware-VMvisor-Installer-7.0U3n-21930508.x86_64.iso \
-> --ks KS-TEMPLATE.CFG \
-> --ip-address 192.168.86.132 \
-> --netmask 255.255.255.0 \
-> --gateway 192.168.86.1 \
-> --hostname esx1-test.j.local \
-> --vlan 0 \
-> --dns 172.16.11.5
+```bash
+ sudo ./esxi_customks_iso.sh --iso VMware-VMvisor-Installer-7.0U3n-21930508.x86_64.so \
+ --ks KS-TEMPLATE.CFG \
+ --ip-address 192.168.86.132 \
+ --netmask 255.255.255.0 \
+ --gateway 192.168.86.1 \
+ --hostname esx1-test.j.local \
+ --vlan 0 \
+ --dns 172.16.11.5
+```
 
-ls -al
