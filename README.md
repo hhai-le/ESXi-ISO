@@ -4,17 +4,19 @@ This script help you can custom ESXi ISO:
 
 Clone this repo & upload ESXi ISO which you want to custom:
 
-> git clone https://github.com/hhai-le/ESXi-ISO.git \
-> cd ESXi-ISO \
-> chmod +x esxi_customks_iso.sh
+```bash
+git clone https://github.com/hhai-le/ESXi-ISO.git
+cd ESXi-ISO
+chmod +x esxi_customks_iso.sh
+```
 
 upload VMware ESXi ISO to this folder.
 
-## example directory
+## Directory
 
 ![Alt text](image/image.png)
 
-run script:
+## script
 
 ```bash
   sudo ./esxi_customks_iso.sh --iso <iso> \
@@ -27,7 +29,7 @@ run script:
   --dns <nameserver>
 ```
 
-## example script
+## example
 
 ```bash
  sudo ./esxi_customks_iso.sh --iso VMware-VMvisor-Installer-7.0U3n-21930508.x86_64.so \
@@ -40,3 +42,4 @@ run script:
  --dns 172.16.11.5
 ```
 
+ls -al
