@@ -6,7 +6,7 @@
 #                        -a 192.168.0.10 -m 255.255.255.0 -g 192.168.0.1 -n esx1.virten.lab -v 0 -d 192.168.0.1
 
 # Check if genisoimage is installed
-command -v genisoimage >/dev/null 2>&1 || { echo >&2 "This script requires genisoimage but it's not installed."; exit 1; }
+command -v genisoimage >/dev/null 2>&1 || { apt install genisoimage ; exit 1; }
 
 # Script must be started as root to allow iso mounting
 if [ "$EUID" -ne 0 ] ; then echo "Please run as root or sudo" ;  exit 1 ;  fi
