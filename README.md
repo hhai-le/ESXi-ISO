@@ -41,3 +41,9 @@ upload VMware ESXi ISO to this folder.
  --vlan 0 \
  --dns 172.16.11.5
 ```
+
+![](image/image-2.png)
+
+![](image/image-3.png)
+
+![](image/image-4.png)
